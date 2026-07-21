@@ -1,9 +1,11 @@
-<!DOCTYPE html>
-<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Стандартные ответы | Provedal</title>
+    <title>Примеры саженной работы компании ООО "Мастер" </title>
+    <!-- Шрифт Inter от Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -11,123 +13,140 @@
             box-sizing: border-box;
         }
         body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            background: #f9fafc;
+            color: #1e293b;
+            padding: 30px 20px;
+            line-height: 1.6;
         }
         .container {
             max-width: 1200px;
             margin: 0 auto;
         }
-        h1, h2 {
-            margin: 25px 0 15px;
-            color: #333;
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: #0f172a;
+            border-left: 6px solid #f97316;
+            padding-left: 20px;
+            margin-bottom: 8px;
+        }
+        .sub {
+            color: #475569;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+        h2 {
+            font-size: 1.7rem;
             font-weight: 600;
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 8px;
+            margin: 35px 0 15px;
+            color: #0f172a;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #e2e8f0;
         }
         .table-wrap {
-            overflow-x: auto;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+            overflow: hidden;
             margin-bottom: 30px;
+            border: 1px solid #edf2f7;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            font-size: 14px;
-            line-height: 1.5;
-        }
-        th, td {
-            padding: 12px 10px;
-            border-bottom: 1px solid #e0e0e0;
-            vertical-align: top;
         }
         th {
-            background: #f0f0f0;
+            background: #f8fafc;
             font-weight: 600;
-            text-align: left;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            color: #475569;
+            padding: 14px 16px;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        td {
+            padding: 16px;
+            vertical-align: top;
+            border-bottom: 1px solid #f1f5f9;
         }
         .video-cell {
-            width: 45%;
-            min-width: 280px;
+            width: 44%;
+            min-width: 260px;
         }
         .text-cell {
-            width: 55%;
-            padding-left: 15px;
+            width: 56%;
+            padding-left: 10px;
         }
         iframe {
             display: block;
             width: 100%;
-            height: auto;
-            aspect-ratio: 478 / 850; /* Сохраняем пропорции из оригинальных размеров */
-            max-width: 100%;
+            aspect-ratio: 478 / 850;
             border: none;
-            background: #eee;
-            border-radius: 4px;
+            background: #f1f5f9;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
         }
         .text-cell ul {
             list-style: none;
             padding-left: 0;
         }
         .text-cell li {
-            margin-bottom: 4px;
             position: relative;
-            padding-left: 18px;
+            padding-left: 20px;
+            margin-bottom: 4px;
         }
         .text-cell li::before {
             content: "•";
             position: absolute;
             left: 0;
-            color: #2c7be0;
-            font-weight: bold;
+            color: #f97316;
+            font-weight: 700;
+        }
+        .price {
+            display: inline-block;
+            background: #fef3c7;
+            color: #b45309;
+            font-weight: 600;
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 0.95rem;
         }
         .text-cell br {
             display: block;
             content: "";
             margin: 4px 0;
         }
-        .b24-form {
-            margin: 30px 0 20px;
-        }
 
-        /* --- Адаптив для телефонов --- */
+        /* ---- Адаптив ---- */
         @media (max-width: 768px) {
             table, thead, tbody, th, td, tr {
                 display: block;
             }
-            thead {
-                display: none;
-            }
+            thead { display: none; }
             tr {
-                margin-bottom: 20px;
-                border-bottom: 2px solid #ddd;
-                padding-bottom: 15px;
+                margin-bottom: 24px;
+                border-bottom: 2px solid #e2e8f0;
+                padding-bottom: 16px;
             }
             td {
                 display: block;
                 width: 100% !important;
-                padding: 8px 10px;
+                padding: 8px 12px;
                 border: none;
             }
-            .video-cell {
-                min-width: unset;
-            }
-            .text-cell {
-                padding-left: 10px;
-                margin-top: 8px;
-            }
-            iframe {
-                aspect-ratio: 478 / 850;
-                width: 100%;
-                height: auto;
-            }
+            .video-cell { min-width: unset; }
+            .text-cell { padding-left: 12px; }
+            iframe { aspect-ratio: 478 / 850; }
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.4rem; }
+            body { padding: 15px; }
         }
         @media (max-width: 480px) {
-            body { padding: 10px; }
-            .table-wrap { border-radius: 4px; }
-            td { padding: 6px 8px; }
+            .table-wrap { border-radius: 8px; }
+            td { padding: 6px 10px; }
         }
     </style>
 </head>
